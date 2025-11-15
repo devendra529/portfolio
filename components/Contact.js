@@ -99,7 +99,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 transition-all"
-                    placeholder="John Doe"
+                    placeholder="Devendra Pratpa Singh"
                   />
                 </div>
               </div>
@@ -119,7 +119,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 transition-all"
-                    placeholder="john@example.com"
+                    placeholder="devendra22@gmail.com"
                   />
                 </div>
               </div>
@@ -197,10 +197,10 @@ export default function Contact() {
               Or reach out directly at
             </p>
             <a
-              href="mailto:devendra@example.com"
+              href="mailto:singhdevendrapratap529@gmail.com"
               className="text-2xl font-bold gradient-text hover:underline"
             >
-              devendra@example.com
+              singhdevendrapratap529@gmail.com
             </a>
           </motion.div>
         </div>
