@@ -101,7 +101,7 @@ export default function Hero() {
                 View My Work
               </button>
               <a
-                href="/Devendra_Pratap_Singh_Resume.pdf"
+                href="/devendra_resume_mern.pdf"
                 download
                 className="px-8 py-4 bg-white dark:bg-gray-800 text-gray-800 dark:text-white rounded-full font-semibold border-2 border-blue-500 hover:bg-blue-50 dark:hover:bg-gray-700 transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
               >

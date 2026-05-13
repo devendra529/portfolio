@@ -5,49 +5,58 @@ import { ExternalLink, Github } from 'lucide-react';
 export default function Projects() {
   const projects = [
     {
-      title: 'Diet Prediction and Visualization System',
-      description: 'Developed an AI-powered web application that provides personalized diet recommendations and visual insights based on user health data. Integrated TensorFlow.js for real-time model predictions, Chart.js for interactive data visualization, and implemented responsive UI using Next.js and CSS with lightweight file-based storage.',
+      title: 'Scanly — Portable Digital Health Records',
+      description: 'A full-stack web application for secure, QR-powered portable health records. Features role-based access (Patient, Doctor, Admin), JWT authentication, file uploads up to 20MB, dark/light mode, PWA support, and responsive design across all devices.',
+      image: '🏥',
+      tech: ['Next.js 14', 'Express.js', 'Tailwind CSS', 'JWT', 'QR Code'],
+      github: '[github.com](https://github.com/devendra529)',
+      live: 'https://scanly-rho.vercel.app/',
+      gradient: 'from-teal-400 to-cyan-500'
+    },
+    {
+      title: 'Diet Prediction System',
+      description: 'An AI-based web app providing personalized diet suggestions and nutrition insights. Includes custom file-based authentication, food image upload for analysis, an interactive chat assistant, and a clean responsive UI—all without a traditional database.',
       image: '🥗',
-      tech: ['Next.js', 'TensorFlow.js', 'Chart.js', 'FileSystem {.txt}'],
-      github: 'https://github.com/devendra529',
-      live: '#',
-      gradient: 'from-green-400 to-cyan-500'
+      tech: ['Next.js', 'Tailwind CSS', 'Node.js', 'File System'],
+      github: '[github.com](https://github.com/devendra529)',
+      live: 'https://diet-pridiction.vercel.app/',
+      gradient: 'from-green-400 to-emerald-500'
     },
     {
-      title: 'Health Blog Platform',
-      description: 'Built a full-stack health blogging platform where users can post, read, like, and comment on articles. Implemented authentication with login and signup features, file-based (.txt) data storage for posts, and a responsive UI using Next.js and Tailwind CSS to ensure a clean and modern user experience.',
-      image: '🛒',
-      tech: ['Next.js', 'Node.js', 'MySQL'],
-      github: 'https://github.com/devendra529',
-      live: '#',
-      gradient: 'from-purple-400 to-pink-500'
-    },
-    {
-      title: 'Task Management System',
-      description: 'Full-stack task management application with real-time updates. Users can create, assign, and track tasks with team collaboration features.',
-      image: '📋',
-      tech: ['React', 'Spring Boot', 'MySQL', 'WebSocket'],
-      github: 'https://github.com/devendra529',
+      title: 'School Management Portal',
+      description: 'A full-stack school ERP with role-based portals for Admin, Teacher, and Student. Features include attendance tracking, homework uploads, result management, notice board, and a dynamic gallery—all powered by a lightweight .txt file-based storage system.',
+      image: '📘',
+      tech: ['Next.js', 'Tailwind CSS', 'Netlify Functions', 'File-based DB'],
+      github: '[github.com](https://github.com/devendra529)',
       live: '#',
       gradient: 'from-blue-400 to-indigo-500'
     },
     {
-      title: 'Canteen Management System',
-      description: 'Designed and developed an interactive, responsive front-end for online food ordering and token management with a smooth user experience.',
-      image: '🍽️',
-      tech: ['JavaScript', 'HTML', 'CSS', 'Firebase'],
-      github: 'https://github.com/devendra529',
+      title: 'Health Blog Platform',
+      description: 'A full-stack health blogging platform where users can post, read, like, and comment on articles. Features secure authentication with login/signup, file-based data storage, and a modern responsive UI built for seamless user experience.',
+      image: '📝',
+      tech: ['Next.js', 'Node.js', 'Tailwind CSS', 'File System'],
+      github: '[github.com](https://github.com/devendra529)',
       live: '#',
-      gradient: 'from-yellow-400 to-orange-500'
+      gradient: 'from-purple-400 to-pink-500'
     },
     {
-      title: 'fitness Tracker',
-      description: 'Built a responsive health tracking system to monitor fitness and dietary activities with interactive dashboards using JavaScript and Firebase.',
-      image: '💪',
-      tech: ['JavaScript', 'HTML', 'CSS'],
-      github: 'https://github.com/devendra529',
+      title: 'ShopKart — eCommerce Platform',
+      description: 'A full-stack MERN eCommerce application with user authentication, product browsing, cart management, and order history. Includes comprehensive API testing with Postman and UI automation using Selenium WebDriver with TestNG.',
+      image: '🛒',
+      tech: ['React', 'Node.js', 'MongoDB', 'Selenium', 'Postman'],
+      github: '[github.com](https://github.com/devendra529)',
       live: '#',
-      gradient: 'from-red-400 to-pink-500'
+      gradient: 'from-orange-400 to-red-500'
+    },
+    {
+      title: 'Sanjeevani Hospital Website',
+      description: 'A professional hospital website currently in development. Features modern design, responsive layout, service information, doctor profiles, appointment booking interface, and patient-focused user experience.',
+      image: '🏨',
+      tech: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
+      github: '[github.com](https://github.com/devendra529)',
+      live: 'https://sanjeevani-hospital-ten.vercel.app/',
+      gradient: 'from-rose-400 to-pink-500'
     }
   ];
 
@@ -80,7 +89,7 @@ export default function Projects() {
               className="card group overflow-hidden"
             >
               {/* Project Image/Icon */}
-              <div className={`w-full h-48 bg-linear-to-br ${project.gradient} rounded-lg mb-4 flex items-center justify-center text-7xl group-hover:scale-110 transition-transform duration-300`}>
+              <div className={`w-full h-48 bg-gradient-to-br ${project.gradient} rounded-lg mb-4 flex items-center justify-center text-7xl group-hover:scale-110 transition-transform duration-300`}>
                 {project.image}
               </div>
 
